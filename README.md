@@ -41,5 +41,10 @@ Asegúrate de tener instalado lo siguiente:
    ```bash
    ng serve
 ### Sígueme
-Conoce otros de mis proyectos:
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=gray)](https://github.com/Yayo22124) [![GitLab](https://img.shields.io/badge/GitLab-%23FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/Yayo22124)
+Conoce otros de mis proyectos en:
+<div align="center">
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=gray)](https://github.com/Yayo22124)
+  [![GitLab](https://img.shields.io/badge/GitLab-%23FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/Yayo22124)
+  
+</div>
