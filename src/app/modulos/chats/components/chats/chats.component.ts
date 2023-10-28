@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +10,20 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./chats.component.scss']
 })
 export class ChatsComponent {
+  @Input() name: string = "";
+  @Input() lastMessage: string = "";
+  @Input() image: string = "";
+  @Input() history: boolean = false;
+  @Input() status: boolean = false;
+  @Input() seen: boolean = false;
 
+  limitWords(text: string, limit: number): string {
+    const words = text.split(' ');
+    if (words.length > limit) {
+      return words.slice(0, limit).join(' ') + '...';
+    } else {
+      return text;
+    }
+  }
+  
 }
