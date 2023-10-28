@@ -1,15 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 import { ChatsRoutingModule } from './chats-routing.module';
-import { ChatsComponent } from './pages/chats/chats.component';
-import { ChatsPageComponent } from './pages/chats-page/chats-page.component';
-
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './pages/home/home.component';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
-    ChatsComponent,
-    ChatsPageComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
