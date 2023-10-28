@@ -1,3 +1,4 @@
+import { ChatsComponent } from './components/chats/chats.component';
 import { ChatsRoutingModule } from './chats-routing.module';
 import { CommonModule } from '@angular/common';
 import { HistoryComponent } from './components/history/history.component';
@@ -13,7 +14,8 @@ import { NgModule } from '@angular/core';
     CommonModule,
     ChatsRoutingModule,
     MatIconModule,
-    HistoryComponent
+    HistoryComponent,
+    ChatsComponent
   ]
 })
 export class ChatsModule { }
