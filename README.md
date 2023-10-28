@@ -1,27 +1,31 @@
-# AngularMessenger
+# Interfaz de Mensajería (Messenger) - Práctica de Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+Esta es una aplicación de práctica desarrollada en Angular que simula una interfaz similar a Messenger. El objetivo principal de esta aplicación es poner a prueba tus conocimientos en Angular, incluyendo el uso de directivas básicas como `ngIf`, `ngClass`, `ngFor`, el uso de componentes y módulos de Angular, enrutamiento con Angular Router, y la implementación de buenas prácticas en el manejo de Git, branches, merge requests, y el procesamiento de objetos JSON y TypeScript para la gestión de datos dinámicos.
 
-## Development server
+## Descripción del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Características Principales
 
-## Code scaffolding
+- **Interfaz Estilo Messenger:** Desarrolla una interfaz de usuario que se asemeje a la popular aplicación de mensajería Messenger.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Uso de Directivas:** Practica el uso de directivas como `ngIf`, `ngClass` y `ngFor` para controlar y personalizar la visualización de los mensajes y otros elementos de la interfaz.
 
-## Build
+- **Componentes y Módulos:** Estructura tu aplicación en componentes y módulos para mantener un código organizado y reutilizable.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Enrutamiento con Angular Router:** Implementa el enrutamiento de Angular Router para navegar entre diferentes secciones de la aplicación, como la lista de contactos y las conversaciones individuales.
 
-## Running unit tests
+- **Gestión de Datos:** Utiliza objetos JSON y TypeScript para manejar los mensajes y otros datos dinámicos de la aplicación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Requisitos
 
-## Running end-to-end tests
+Asegúrate de tener instalado lo siguiente:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-## Further help
+### Cómo Iniciar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clona este repositorio a tu máquina local:
+
+   ```bash
+   git clone <URL_DEL_REPO>
