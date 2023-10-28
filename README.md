@@ -37,3 +37,6 @@ Asegúrate de tener instalado lo siguiente:
 3. Instala las dependencias
    ```bash
    npm install
+4. Levanta el proyecto
+   ```bash
+   ng serve
