@@ -1,20 +1,21 @@
 <main class="h-[75vh] flex flex-col items-center">
     <!-- Search Bar -->
-    <form class="w-[90%]">
+    <form class="w-[90%] mb-2">
         <div class="relative">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <mat-icon class="text-gray-900/30">search</mat-icon>
             </div>
             <input type="search" id="search"
-                class="w-full flex items-center p-2 pl-10 text-base text-gray-900 font-normal border rounded-full focus:outline-none" placeholder="Search">
+                class="w-full flex items-center p-2 pl-10 text-base text-gray-900 font-normal border rounded-full focus:outline-none"
+                placeholder="Search">
         </div>
     </form>
     <!-- Histories -->
-    <section>
-        <app-history></app-history>
+    <section class="w-[90%] h-auto flex gap-5 ">
+        <app-history *ngFor="let chat of chats" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
     </section>
     <!-- Chats -->
     <section>
-        <div><span>chats</span></div>
+        <div *ngFor="let chat of chats" class="flex flex-col"><span>{{chat.name}}</span></div>
     </section>
 </main>

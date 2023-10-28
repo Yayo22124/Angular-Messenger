@@ -1,1 +1,4 @@
-<p>history works!</p>
+<section class="w-[58px] h-[58px] relative">
+    <img src="{{image}}" alt="Profile Pic" class="bg-neutral-300 rounded-full w-full h-full object-cover relative" [ngClass]="{'border-sky-500 box-border border-[4px]': history}">
+    <span *ngIf="status" class="bg-green-500 border-[3px] border-white w-[16px] h-[16px] rounded-full absolute bottom-0 right-0"></span>
+</section>
