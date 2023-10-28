@@ -12,7 +12,7 @@
     </form>
     <!-- Histories -->
     <section class="w-[90%] h-auto flex gap-5 ">
-        <app-history *ngFor="let chat of chats" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
+        <app-history *ngFor="let chat of chats, let index" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
     </section>
     <!-- Chats -->
     <section>
