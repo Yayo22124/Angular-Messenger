@@ -3,6 +3,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FooterComponent } from './componentes/footer/footer.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { NgModule } from '@angular/core';
 
@@ -15,7 +18,10 @@ import { NgModule } from '@angular/core';
     AppRoutingModule,
     BrowserAnimationsModule,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
