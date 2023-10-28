@@ -11,11 +11,11 @@
         </div>
     </form>
     <!-- Histories -->
-    <section class="w-[90%] h-auto flex gap-5 ">
+    <section class="w-[90%] h-auto flex gap-5 mb-3">
         <app-history *ngFor="let chat of chats, let index" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
     </section>
     <!-- Chats -->
-    <section>
+    <section class="max-h-[55vh]  w-[90%] overflow-y-auto sm:overflow-y-hidden">
         <div *ngFor="let chat of chats" class="flex flex-col"><span>{{chat.name}}</span></div>
     </section>
 </main>
