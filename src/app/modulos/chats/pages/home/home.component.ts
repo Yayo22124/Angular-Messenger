@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IUsuario } from 'src/app/core/interfaces/usuario.interface';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  chats: any = [
+  chats: IUsuario[] = [
     {
       name: 'Lenee Elsmor',
       image: 'http://dummyimage.com/174x100.png/cc0000/ffffff',
@@ -138,4 +139,8 @@ export class HomeComponent {
       history: false,
     },
   ];
+
+  handleSeen(event: any) {
+    console.log(`Cambio Seen de `);
+  }
 }

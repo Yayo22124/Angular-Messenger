@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 
@@ -11,11 +11,17 @@ import { CommonModule } from '@angular/common';
 })
 export class ChatsComponent {
   @Input() name: string = "";
-  @Input() lastMessage: string = "";
+  @Input("last-message") lastMessage: string = "";
   @Input() image: string = "";
   @Input() history: boolean = false;
   @Input() status: boolean = false;
   @Input() seen: boolean = false;
+
+  @Output() actionSeen = new EventEmitter<any>();
+
+  onChangeSeen(){
+    !this.seen ? this.seen = !this.seen : this.seen = this.seen
+  }
 
   limitWords(text: string, limit: number): string {
     const words = text.split(' ');
