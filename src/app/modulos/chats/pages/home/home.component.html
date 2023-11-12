@@ -1,6 +1,6 @@
-<main class="h-[75vh] flex flex-col items-center">
+<main class="h-full w-full  flex flex-col items-center overflow-y-auto">
     <!-- Search Bar -->
-    <form class="w-[90%] mb-2">
+    <form class="w-full flex-none mb-2 px-3">
         <div class="relative">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <mat-icon class="text-gray-900/30">search</mat-icon>
@@ -11,11 +11,11 @@
         </div>
     </form>
     <!-- Histories -->
-    <section class="max-w-[90%] flex gap-5 mb-3">
+    <section class="w-full flex flex-none overflow-x-hidden gap-4 h-auto px-3">
         <app-history *ngFor="let chat of chats, let index" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
     </section>
     <!-- Chats -->
-    <section class="max-h-[55vh]  w-[90%] overflow-y-auto sm:overflow-y-hidden flex flex-col gap-3 mb-2">
+    <section class=" w-full grow  flex  flex-col gap-3 px-3">
         <app-chats *ngFor="let chat of chats" [name]="chat.name" [history]="chat.history" [image]="chat.image" [seen]="chat.seen" [status]="chat.status" [last-message]="chat.lastMessage"></app-chats>
     </section>
 </main>

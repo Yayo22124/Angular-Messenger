@@ -20,7 +20,8 @@ export class ChatsComponent {
   @Output() actionSeen = new EventEmitter<any>();
 
   onChangeSeen(){
-    !this.seen ? this.seen = !this.seen : this.seen = this.seen
+    if (this.seen) return
+    this.seen = !this.seen
   }
 
   limitWords(text: string, limit: number): string {
