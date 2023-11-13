@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HistoryComponent } from './components/history/history.component';
 import { HomeComponent } from './pages/home/home.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NgModule } from '@angular/core';
     ChatsRoutingModule,
     MatIconModule,
     HistoryComponent,
-    ChatsComponent
+    ChatsComponent,
+    MatSnackBarModule
   ]
 })
 export class ChatsModule { }

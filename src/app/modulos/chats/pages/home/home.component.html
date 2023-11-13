@@ -12,10 +12,10 @@
     </form>
     <!-- Histories -->
     <section class="w-full flex flex-none overflow-x-hidden gap-4 h-auto px-3">
-        <app-history *ngFor="let chat of chats, let index" [history]="chat.history" [status]="chat.status" [image]="chat.image"></app-history>
+        <app-history *ngFor="let chat of chats, let index" [history]="chat.history" (actionSeenHistory)="handleSeenHistory($event)" [status]="chat.status" [image]="chat.image" [name]="chat.name"></app-history>
     </section>
     <!-- Chats -->
     <section class=" w-full grow  flex  flex-col gap-3 px-3">
-        <app-chats *ngFor="let chat of chats" [name]="chat.name" [history]="chat.history" [image]="chat.image" [seen]="chat.seen" [status]="chat.status" [last-message]="chat.lastMessage"></app-chats>
+        <app-chats *ngFor="let chat of chats" [name]="chat.name" [history]="chat.history" [image]="chat.image" [seen]="chat.seen" (actionSeen)="handleSeen($event)" (actionSeenHistory)="handleSeenHistory($event)" [status]="chat.status" [last-message]="chat.lastMessage"></app-chats>
     </section>
 </main>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IUsuario } from 'src/app/core/interfaces/usuario.interface';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { IUsuario } from 'src/app/core/interfaces/usuario.interface';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+  // Injectar el snackbar
+  constructor(private snackBar: MatSnackBar) {
+    
+  }
   chats: IUsuario[] = [
     {
       name: 'Lenee Elsmor',
@@ -140,7 +145,15 @@ export class HomeComponent {
     },
   ];
 
-  handleSeen(event: any) {
-    console.log(`Cambio Seen de `);
+  handleSeen(event: IUsuario) {
+    this.snackBar.open(`Mensaje leído de ${event.name}`, 'cerrar', {
+      duration: 5*1000,
+    });
+  }
+
+  handleSeenHistory(event: any) {
+    this.snackBar.open(`Historia vista de ${event.name}.`, 'cerrar', {
+      duration: 5*1000, 
+    });
   }
 }

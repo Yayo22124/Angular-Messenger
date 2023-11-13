@@ -1,9 +1,9 @@
-<section class="flex gap-3  rounded-full cursor-pointer hover:bg-transparent/10 active:scale-[0.98]" (click)="onChangeSeen()">
-    <div class="w-14 h-14 relative">
+<section class="flex gap-3  rounded-full cursor-pointer hover:bg-transparent/10 active:scale-[0.98]">
+    <div class="w-14 h-14 relative" (click)="onChangeSeenHistory()">
         <img [src]="image" [alt]="name" class="bg-neutral-300 rounded-full w-full h-full object-cover relative" [ngClass]="{'border-sky-500 box-border border-[4px]': history}">
         <span *ngIf="status" class="bg-green-500 border-[3px] border-white w-4 h-4 rounded-full absolute bottom-0 right-0"></span>
     </div>
-    <div class="max-w-[80%]">
+    <div class="max-w-[80%]" (click)="onChangeSeen()">
         <span class="font-normal text-base">{{name}}</span>
         <p class="text-xs" [ngClass]="{'text-neutral-400 font-light':seen, 'text-black font-bold':!seen}">{{limitWords(lastMessage, 5)}}</p>
     </div>
