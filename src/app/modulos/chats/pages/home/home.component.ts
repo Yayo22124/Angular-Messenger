@@ -12,6 +12,7 @@ export class HomeComponent {
   constructor(private snackBar: MatSnackBar) {
     
   }
+  
   chats: IUsuario[] = [
     {
       name: 'Lenee Elsmor',

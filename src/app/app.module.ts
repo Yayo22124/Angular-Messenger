@@ -2,7 +2,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { FooterComponent } from './componentes/footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -19,7 +18,6 @@ import { ToolBarComponent } from './componentes/tool-bar/tool-bar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NavBarComponent,
-    FooterComponent,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
